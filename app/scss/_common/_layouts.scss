@@ -1,0 +1,21 @@
+// layouts
+//категории 2ой слой
+.full-category{
+	position: absolute;
+	background-color: rgba(61, 79, 173, 0.9);
+}
+// 1ая страница 3ий слой
+.all-data {
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+.category_small{
+	background-color: rgba(49, 64, 154, 0.9);
+}
+.category_mid.categore_even-column{
+	background-color: rgba(61, 79, 173, 0.9);
+}
+.category_mid.categore_odd-column{
+	background-color: rgba(49, 64, 154, 0.9);
+}

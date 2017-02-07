@@ -1,0 +1,188 @@
+.all-data
+			.wrapper.clearfix
+
+				.category.category_small.categore_odd-column#category
+					.category__header
+						h3.category__title Категории
+					ul.category__list.active
+						.category__item-wrap
+							- var categories = ['Галактика ERP','Галактика EAM','Галактика AMM','Галактика BI']
+							each category in categories
+								li.category__item
+									span.category__text= category
+
+				.category.category_mid.categore_even-column#video
+						.category__header
+							h3.category__title Видеозаписи
+						ul.category__list.active
+							- var categories = ['Управление проектами на промышленных предприятиях', 'Комплекс решений корпорации «Галактика» для эффективного управления МТО','«Планирование отпусков в «Галактике ERP 9.1»','Электронная отчетность. Формирование декларации по НДС с 2015 г','Поддержка пилотного проекта ФСС в «Галактике ERP 9.1»']
+							each category in categories
+								li.category__item.category__item_education.clearfix
+									span.category__text.category__text_education.clearfix= category
+									.category__button-wrap
+										button.category__button Смотреть
+
+						ul.category__list
+							- var categories = ['Управление производственными активами. Тиражная EAM-система', ' Использование лучших отечественных и зарубежных методик ТОиР','Галактика ЕАМ 3.1: передовой опыт. Управление процессами ТОиР и производственными активами, ч.1','Галактика ЕАМ 3.1: передовой опыт управления процессами ТОиР, ч.2','«Галактика EAM» для сети розничных магазинов']
+							each category in categories
+								li.category__item.category__item_education.clearfix
+									span.category__text.category__text_education.clearfix= category
+									.category__button-wrap
+										button.category__button Смотреть
+
+						ul.category__list
+							- var categories = ['Управление проектами на промышленных предприятиях', 'Комплекс решений корпорации «Галактика» для эффективного управления МТО','«Вытягивающее» планирование и управление сложным машиностроительным производством','«Галактика АММ»: прорыв в эффективное производство','Управление производством: от идеи до реализации']
+							each category in categories
+								li.category__item.category__item_education.clearfix
+									span.category__text.category__text_education.clearfix= category
+									.category__button-wrap
+										button.category__button Смотреть
+
+						ul.category__list
+							- for(var i=0; i<5; i++)
+								li.category__item.category__item_education
+									span.category__text.category__text_education.clearfix Управление проектами на промышленных предприятиях
+										.category__button-wrap
+											button.category__button Смотреть
+
+				.category.category_mid.categore_odd-column#document
+						.category__header
+							h3.category__title Материалы
+						- var systems = ['Пробная версия системы "Галактика ERP"','Пробная версия системы "Галактика EAM"','Пробная версия системы "Галактика AMM"','Пробная версия системы "Галактика BI"']
+						each system in systems
+							.download.clearfix
+								span.category__text.category__text_education=system
+								.category__button-wrap
+									button.category__button Скачать
+						ul.category__list.active
+							- var categories = ['Адаптация стандартных интерфейсов к требованиям пользователя', 'Конвертер словаря БД для Pervasive PSQL','Накопительное обновление словаря Галактика ERP 9.1','Модуль тестирования систем «Галактика ERP», «Support»','Управление транспортом. Работа с картотеками и администрирование модуля', 'Управление транспортом. Документы, отчеты']
+							each category in categories
+								li.category__item.category__item_education.clearfix 
+									span.category__text.category__text_education= category
+									.category__button-wrap
+										button.category__button Открыть
+
+						ul.category__list
+							- var categories = ['Экономическая эффективность управления основными фондами и процессами ТОиР', 'Управление техническим обслуживанием и ремонтом','Выбор оптимальной стратегии эксплуатации оборудования','Оптимизация технического обслуживания и ремонта','Галактический катализатор']
+							each category in categories
+								li.category__item.category__item_education.clearfix 
+									span.category__text.category__text_education= category
+									.category__button-wrap
+										button.category__button Открыть
+
+						ul.category__list
+							- var categories = ['Экономическая эффективность управления основными фондами и процессами ТОиР', 'Управление техническим обслуживанием и ремонтом','Выбор оптимальной стратегии эксплуатации оборудования','Оптимизация технического обслуживания и ремонта','Галактический катализатор']
+							each category in categories
+								li.category__item.category__item_education.clearfix 
+									span.category__text.category__text_education= category
+									.category__button-wrap
+										button.category__button Открыть
+
+						ul.category__list
+							- var categories = ['Экономическая эффективность управления основными фондами и процессами ТОиР', 'Управление техническим обслуживанием и ремонтом','Выбор оптимальной стратегии эксплуатации оборудования','Оптимизация технического обслуживания и ремонта','Галактический катализатор']
+							each category in categories
+								li.category__item.category__item_education.clearfix 
+									span.category__text.category__text_education= category
+									.category__button-wrap
+										button.category__button Открыть
+
+				.category.category_big.categore_even-column
+						.category__header.clearfix
+							.category__full-content
+								i.pe-7s-more.pe-5x.pe-va
+							h3.category__title Управление проектами на промышленных предприятиях
+						.content
+							.content__wrap
+								.content__image-wrap
+									img.content__image(src='images/content/ERP/ERP1.jpg', alt='ERP1')
+								.contant__container
+									.content__text-wrap.active
+										span.content__text.content_author Олег Юрьев, Бизнес-архитектор проекта 'Галактика Проектное производство
+										p.content__text.content_info В программе вебинара:
+											ol.content__list
+												li(value='1').content__item
+													span.content__text Производственное планирование;
+												li.content__item 
+													span.content__text Управление МТО;
+												li.content__item
+													span.content__text Управление производством на цеховом уровне;
+												li.content__item
+													span.content__text Формирование нарядов (бригадные, индивидуальные) по результатам выполнения ССЗ;
+												li.content__item
+													span.content__text Анализ плановых и фактических данных с использованием Microsoft Power BI.
+									.content__text-wrap
+										span.content__text.content_author Игорь Шатохин, к.т.н., руководитель группы консалтинга и поддержки  
+										p.content__text.content_info Эффективное управление входными потоками сырья, материалов и комплектующих изделий с использованием информационной системы управления в значительной степени является залогом успешной деятельности, как отдельного промышленного предприятия, так и холдинговой компании. 
+										p.content__text.content_info Предлагаемые корпорацией «Галактика» решения обеспечивают:
+											ol.content__list
+												li(value='1').content__item
+													span.content__text организацию и исполнение заявок производственных подразделений на материально-технические ресурсы (МТР) в рамках холдинговых структур;
+												li.content__item 
+													span.content__text предупреждение дефицита в обеспечении производства основными материалами и комплектующими изделиями;
+												li.content__item
+													span.content__text использование технологий штрих-кодирования для приемки и учета МТР;
+												li.content__item
+													span.content__text мониторинг состояния запасов МТР.
+									.content__text-wrap
+										span.content__text.content_author Игорь Шатохин, к.т.н., руководитель группы консалтинга и поддержки  
+										p.content__text.content_info Галактика ERP 9.1 предоставляет новые возможности модуля «Управление персоналом» для визуального анализа отобранных данных: планирование организационно-штатной структуры на будущий период, моделирование различных схем организации работы сотрудников, анализ связей и функциональной подчиненности подразделений. Также версия 9.1 позволяет выполнить создание группового приказа по нескольким сотрудникам с однотипным для всех содержанием. Преимущества использования:
+											ol.content__list
+												li(value='1').content__item
+													span.content__text Координация деятельности различных подразделений предприятия, оценка эффективности распределения заданий и использования трудовых ресурсов.
+												li.content__item 
+													span.content__text Оперативная оценка последствий изменений, вносимых в организационную структуру. Любые изменения в организационно-штатной структуре отражаются на диаграммах, а вся история изменений сохраняется в базе данных.
+												li.content__item
+													span.content__text Новый подход к планированию отпусков и обеспечению их финансовыми ресурсами.
+												li.content__item
+													span.content__text Гибкий инструмент для сверки и анализа данных в необходимых разрезах, обеспечивает возможность поиска и исправления ошибок.
+												li.content__item
+													span.content__text Процесс создания аналитических отчетов значительно ускорился и происходит с меньшим потреблением памяти и вычислительных ресурсов.
+												li.content__item
+													span.content__text Сократилось время ожидания пользователя на обработку больших объемов данных при формировании отчетных форм.
+									.content__text-wrap
+										span.content__text.content_author Владимир Украинко  
+										p.content__text.content_info В рамках цикла мероприятий «ERP в нюансах», мы вновь поднимаем актуальную тему формирования декларации по НДС в формате вебинара! В первой двадцатиминутной части онлайн-мероприятия будет показан сквозной пример заполнения налоговой декларации в системе «Галактика ERP».
+									.content__text-wrap
+										span.content__text.content_author Галина Шавель  
+										p.content__text.content_info С 1 июля 2011 года началось поэтапное реформирование системы социального страхования. С инициативой модернизации существующего порядка выплаты пособий по временной нетрудоспособности, материнству и детству выступил Фонд социального страхования Российской Федерации
+
+								.contant__container
+									.content__text-wrap
+										span.content__text.content_author Олег Юрьев, Бизнес-архитектор проекта 'Галактика Проектное производство
+										p.content__text.content_info На вебинаре сделан обзор тиражного решения «Галактика ЕАМ», показаны ключевые преимущества, авторская методика для самостоятельного внедрения, цены на лицензии и услуги.
+									.content__text-wrap
+										span.content__text.content_author Игорь Шатохин, к.т.н., руководитель группы консалтинга и поддержки  
+										p.content__text.content_info В программе вебинара:
+											ol.content__list
+												li(value='1').content__item
+													span.content__text Производственное планирование;
+												li.content__item 
+													span.content__text Управление МТО;
+												li.content__item
+													span.content__text Управление производством на цеховом уровне;
+												li.content__item
+													span.content__text Формирование нарядов (бригадные, индивидуальные) по результатам выполнения ССЗ;
+												li.content__item
+													span.content__text Анализ плановых и фактических данных с использованием Microsoft Power BI.
+									.content__text-wrap
+										span.content__text.content_author Вице-президент Александр Бургардт и Руководитель проектов Аркадий Пак
+										p.content__text.content_info В программе вебинара:
+											ol.content__list
+												li(value='1').content__item
+													span.content__text презентация новой версии тиражной системы «Галактика ЕАМ» 3.1, в которую вошел опыт реализации крупных проектов управления ТОиР на отечественных предприятиях в 2013-2014гг.;
+												li.content__item 
+													span.content__text демонстрация практических примеров построения системы повышения надежности оборудования на основе «Галактика ЕАМ» 3.1;
+												li.content__item
+													span.content__text способы формирования базы данных оборудования и нормативов, классификации и паспортизации на производственных предприятиях;
+												li.content__item
+													span.content__text методология построения типового проекта автоматизации процессов ТОиР.
+									.content__text-wrap
+										span.content__text.content_author Вице-президент Александр Бургардт и Руководитель проектов Аркадий Пак
+										p.content__text.content_info Ответы на вопросы.
+									.content__text-wrap
+										span.content__text.content_author Галина Шавель  
+										p.content__text.content_info Применение системы «Галактика EAM» для сети розничных магазинов
+
+							.iframe-wrap
+								embed.iframe(src="content/ERP/ERP1.pdf" internalinstanceid="11")
+

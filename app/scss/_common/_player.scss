@@ -1,0 +1,29 @@
+.video__title{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 20px;
+	font-family: 'robotomedium';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 28px;
+}
+.video__info{
+	margin: 0;
+	margin-left: 20px;
+	color: #727272;
+	font-family: 'robotoregular';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 21px;
+}
+.video, .video__item, .video__content{
+	width: 100%;
+}
+.video__content{
+	height: 578px;
+}
+.video{
+	width: 100%;
+	height: 578px;
+}
+

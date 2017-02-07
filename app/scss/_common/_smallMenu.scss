@@ -1,0 +1,89 @@
+//mode small menu
+
+// .full-category{
+// 	width: 95%;
+// }
+
+.small{
+	width: 5%;
+	.header__logo-wrap{
+		display: none;
+	}
+	.header__menu-icon{
+		width: 100%;
+    text-align: center;
+    padding: 0;
+		padding-top: 10px;
+	}
+	.acco__icon{
+		padding: 0;
+		width: 100%;
+    text-align: center;
+	}
+	.acco__item-wrap{
+		&:hover{
+			.acco__value-wrap{
+				display: none;
+			}
+		}
+	}
+	.inserted_time{
+		display: none;
+	}
+	.inserted__text-wrap{
+		display: none;
+	}
+	.inserte__id-wrap-small{
+		float: none;
+		display: block;
+		margin-bottom: 11px;
+		background-color: #6a78c6;
+		border-radius: 50%;
+		margin-top: 11px;
+		width: 20px;
+		height: 20px;
+	}
+	.inserted__item{
+		cursor: pointer;
+		padding-left: 33%;
+    padding-right: 33%;
+
+		&:hover{
+			background-color: $bgc;
+		}
+	}
+	.inserted__icon{
+		float: none;
+		font-size: 28px;
+		padding: 0;
+		padding-left: 33%;
+    padding-right: 33%;
+	}
+	.acco__text{
+		display: none;
+	}
+	.acco__text-small{
+		padding-top: 15px;
+		display: block;
+		width: 100%;
+		text-align: center;
+		color: #fff;
+		font-size: 16px;
+		font-family: 'robotoregular';
+		font-weight: normal;
+	  font-style: normal;
+	}
+	.acco__icon{
+		font-size: 30px;
+	}
+	.footer__button-wrap{
+		display: none;
+	}
+	.footer__icon{
+		font-size: 30px;
+		text-align: center;
+		width: 100%;
+		padding: 0;
+		padding-top: 22px;
+	}
+}

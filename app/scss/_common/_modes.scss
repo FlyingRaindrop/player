@@ -1,0 +1,30 @@
+// блок с плеером и категориями
+.player{
+	display: block;
+}
+// блок плеера
+.player__item{
+	display: block;
+}
+// список видео по выбранной категории
+.full-category{
+	display: none;
+}
+// первая страница
+.all-data{
+	display: block;
+}
+// контент на первой странице для видео
+.content__wrap{
+	display: block;
+}
+// блок с pdf файлом
+.iframe-wrap{
+	display: none;
+}
+
+//скрытие элементов
+// аккордеон
+.inserted__list{
+	display: none;
+}
