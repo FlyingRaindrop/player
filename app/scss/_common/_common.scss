@@ -7,11 +7,12 @@ li{
 html,
 body{
   height: 100%;
-  min-width: $pageWidth;
+  min-width: 170px;
   // background-color: $bgc;
 }
 .wrapper{
-	width: $pageWidth;
+	min-width: 170px;
+	// width: $pageWidth;
 	margin: 0 auto;
 	height: 100%;
 }

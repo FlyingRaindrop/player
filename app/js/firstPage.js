@@ -8,18 +8,57 @@ var FirstPage = (function(){
 	}; 
 
 	var _setUpListners = function(){ 
+		var materialWidth,
+			categoryWidth,
+			pageWidth,
+			materialWidthPer,
+			categoryWidthPer,
+			width;
+
+		var _widthCount = function(){
+			materialWidth = $('#document').outerWidth();
+			categoryWidth = $('#category').outerWidth();
+			pageWidth = $('body').outerWidth();
+			materialWidthPer = materialWidth/pageWidth*100;
+		};
+
+		$(window).on('load resize', function(){
+			if($('.category_big-active').length > 0){
+				if(materialWidthPer == 100){
+					_widthCount();
+					$('.category_big').css({width: width + '100%'});
+				}else{
+					_widthCount();
+					width = 100 - materialWidthPer;
+					width = Math.round(width).toFixed(0);
+					$('.category_big').css({width: width + '%'});
+				}
+			}
+		});
+
 		$('.category__full-content').toggle( 
 		function(e){ 
-			$('.category_big').animate({width: "79%"}, 500); 
+			_widthCount();
+			width = 100 - materialWidthPer;
+			width = Math.round(width).toFixed(0);
+			$('.category_big').css({width: width + '%'})
+								.addClass('category_big-active');
 			$('.category_small').hide(500); 
 			$('.category_mid.categore_even-column').hide(500); 
-			}, 
-		function(e){ 
+		}, 
+		function(e){
+			_widthCount();
+			categoryWidthPer = categoryWidth/pageWidth*100;
+			width = 100 - (materialWidthPer*2) - categoryWidthPer;
+			width = Math.round(width).toFixed(0);
 			$('.category_small').show(500); 
 			$('.category_mid.categore_even-column').show(500); 
-			$('.category_big').css({'width':'44%'}); 
-			} 
-		); 
+			$('.category_big').css({'width': width + '%'})
+								.removeAttr('style')
+								.removeClass('category_big-active');
+		}); 
+
+
 	}; 
 
 	// =======Смена списков Видеозаписи и Материалы при выборе категории======= 
