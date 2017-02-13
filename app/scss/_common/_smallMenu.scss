@@ -1,7 +1,7 @@
 //mode small menu
 
 .small{
-	width: 5%;
+	width: 50px;
 	.header__logo-wrap{
 		display: none;
 	}
@@ -80,6 +80,19 @@
 		text-align: center;
 		width: 100%;
 		padding: 0;
-		padding-top: 22px;
+		padding-top: 12px;
+	}
+	.footer__button-wrap-small{
+		display: block;
+	}
+	.footer__button_small{
+		width: 50px;
+		font-size: 18px;
+		padding-top: 10px;
+		padding-bottom: 7px;
+	}
+	.footer {
+		height: 95px;
+		margin-top: -95px;
 	}
 }
