@@ -10,18 +10,7 @@ var SecondPage = (function(){
 		_allData(); 
 		_changeVideo(); 
 		$(window).on('load resize',_windowSize); 
-		// $(window).on('load resize',_resetWidth); 
 	}; 
-
-	// var _resetWidth = function(){
-	// 	// $('.category_big').css({'width': ''}); 
-	// 	console.log($('.category_small'));
-	// 	if(($('#category') && $('#video'))>0){
-	// 		console.log('resize1');
-	// 		$('.category_big').removeAttr('style');
-	// 	}
-		
-	// };
 
 	//===========Accordion============= 
 	var _accordion = function(){ 
@@ -85,8 +74,7 @@ var SecondPage = (function(){
 
 	// ========Menu view change when window resizing occurs========= 
 	var _windowSize = function(){ 
-		console.log('resize2');
-		if ($(window).width() <= '1305'){ 
+		if ($(window).width() <= '1200'){ 
 		$('.menu').removeClass('full').addClass('small'); 
 		$('.full-category').css({'width': '95%'}); 
 		$('.player__item').css({'width': '95%'}); 

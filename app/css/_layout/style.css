@@ -23,6 +23,10 @@ li {
   list-style: none;
 }
 
+html {
+  font-size: 1rem;
+}
+
 html,
 body {
   height: 100%;
@@ -114,8 +118,6 @@ body {
 
 .category__list {
   display: none;
-  height: 90%;
-  overflow: scroll;
 }
 
 .category__list.active {
@@ -548,12 +550,12 @@ body {
 }
 
 .footer__icon {
-  padding-top: 17px;
-  padding-right: 17px;
-  padding-left: 17px;
+  padding-top: 0.94rem;
+  padding-right: 0.94rem;
+  padding-left: 0.94rem;
   float: right;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: #fff;
 }
 
@@ -614,7 +616,7 @@ body {
 }
 .small .inserted__icon {
   float: none;
-  font-size: 28px;
+  font-size: 20px;
   padding: 0;
   padding-left: 33%;
   padding-right: 33%;
