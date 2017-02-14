@@ -16,20 +16,42 @@
 	font-style: normal;
 	font-size: 21px;
 }
-.video, .video__item, .video__content{
-	width: 100%;
-}
-.video__content{
-	height: 578px;
-}
+// .video, .video__item, .video__content{
+// 	width: 100%;
+// }
+// .video__content{
+// 	// height: 578px;
+// }
+// .video{
+// 	width: 100%;
+// 	// height: 578px;
+// 	// height: 100%;
+// }
+// .video__item{
+// 	// height: 80%;
+// 	// height: 100%;
+// }
+// .video-js{
+// 	width: 100%;
+//   	height: auto;
+//   	max-height: 100%;
+// }
 .video{
+	height: 100%;
 	width: 100%;
-	height: 578px;
-	// height: 100%;
 }
-.video__item{
-	// height: 80%;
+video{
+	height: auto;
+	width: 100%;
 }
+// .video-js{
+// 	height: auto;
+// 	width: 100%;
+// }
+// .vjs_video_3-dimensions{
+// 	height: auto;
+// 	width: 100%;
+// }
 .video__text{
 	// height: 20%;
 }

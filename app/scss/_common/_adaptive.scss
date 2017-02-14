@@ -1,3 +1,4 @@
+// для первой страницы
 @media screen and (min-width: 800px) and (max-width: 960px){
 	.category__full-content{
 		font-size: 20px;
@@ -90,4 +91,22 @@
 		height: auto;
 	}
 }
-/* and (min-width: 1024px) */
+
+// для плеера
+@media screen and (max-width: 750px){
+	.video__title{
+		font-size: 23px;
+	}
+	.video__info{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 920px){
+	.player__item{
+		width: 92%;
+	}
+	.small{
+		width: 8%;
+	}
+}
