@@ -59,31 +59,25 @@ var SecondPage = (function(){
 	// =========Menu view change========= 
 	var _menu = function(){ 
 		$('.header__menu-icon').on('click', function(){ 
-		$('.menu').removeClass('full').addClass('small'); 
-		$('.full-category').css({'width': '92%'}); 
-		$('.player__item').css({'width': '92%'}); 
-		// $('.video__item').css({'height': '700px'}); 
+			$('.menu').removeClass('full').addClass('small'); 
+			$('.full-category').css({'width': '95%'});
+			$('.player__item').css({'width': '95%'});
 		}); 
 		$('.footer__icon').on('click', function(){ 
-		$('.menu').removeClass('small').addClass('full'); 
-		$('.full-category').css({'width': '75%'}); 
-		$('.player__item').css({'width': '75%'}); 
-		// $('.video__item').css({'height': '579px'}); 
+			$('.menu').removeClass('small').addClass('full'); 
+			$('.full-category').css({'width': '75%'}); 
+			$('.player__item').css({'width': '75%'}); 
 		}); 
 	}; 
 
 	// ========Menu view change when window resizing occurs========= 
 	var _windowSize = function(){ 
-		if ($(window).width() <= '1200'){ 
-		$('.menu').removeClass('full').addClass('small'); 
-		$('.full-category').css({'width': '92%'}); 
-		$('.player__item').css({'width': '92%'}); 
-		// $('.video__item').css({'height': '700px'}); 
-		}else{ 
-		$('.menu').removeClass('small').addClass('full'); 
-		$('.full-category').css({'width': '75%'}); 
-		$('.player__item').css({'width': '75%'}); 
-		// $('.video__item').css({'height': '579px'}); 
+		if ($(window).width() < '1200'){ 
+			$('.full-category').removeAttr('style');
+			$('.player__item').removeAttr('style');
+			$('.menu').removeClass('full').addClass('small'); 
+		}else{
+			$('.menu').removeClass('small').addClass('full'); 
 		} 
 	};
 

@@ -102,11 +102,37 @@
 	}
 }
 
-@media screen and (max-width: 920px){
-	.player__item{
+//меняются пропорции плеер/меню
+@media screen and (max-width: 1200px){
+	.player__item, .full-category{
+		width: 95%;
+	}
+}
+@media screen and (min-width: 451px) and (max-width: 920px){
+	.player__item, .full-category{
 		width: 92%;
 	}
 	.small{
 		width: 8%;
+	}
+	.small{
+		.acco__text-small{
+			font-size: 14px;
+		}
+	} 
+}
+@media screen and (max-width: 530px){
+	.small{
+		.acco__text-small{
+			font-size: 14px;
+		}
+	}
+}
+@media screen and (max-width: 450px){
+	.player__item, .full-category{
+		width: 90%;
+	}
+	.small{
+		width: 10%;
 	}
 }
