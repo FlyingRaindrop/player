@@ -11,11 +11,9 @@ html,
 body{
   height: 100%;
   min-width: 170px;
-  // background-color: $bgc;
 }
 .wrapper{
 	min-width: 170px;
-	// width: $pageWidth;
 	margin: 0 auto;
 	height: 100%;
 }
@@ -64,6 +62,7 @@ body{
   padding-bottom: 70px;
 }
 .footer{
+position: relative;
   height: 72px;
   margin-top: -72px;
 }

@@ -173,14 +173,10 @@
 	font-size: 20px;
 	color: #fff;
 }
-
-
-
 .footer__button-wrap{
-	float: left;
-	margin-top: 17px;
-	margin-left: 20px;
-	margin-bottom: 20px;
+    position: absolute;
+    top: 30%;
+    left: 6%;
 }
 .footer__button{
   padding-top: 5px;

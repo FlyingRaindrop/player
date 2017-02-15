@@ -58,16 +58,27 @@ var SecondPage = (function(){
 
 	// =========Menu view change========= 
 	var _menu = function(){ 
-		$('.header__menu-icon').on('click', function(){ 
-			$('.menu').removeClass('full').addClass('small'); 
-			$('.full-category').css({'width': '95%'});
-			$('.player__item').css({'width': '95%'});
-		}); 
-		$('.footer__icon').on('click', function(){ 
-			$('.menu').removeClass('small').addClass('full'); 
-			$('.full-category').css({'width': '75%'}); 
-			$('.player__item').css({'width': '75%'}); 
-		}); 
+		// $('.header__menu-icon').on('click', function(){ 
+		// 	$('.menu').removeClass('full').addClass('small'); 
+		// 	$('.full-category').css({'width': '95%'});
+		// 	$('.player__item').css({'width': '95%'});
+		// }); 
+		// $('.footer__icon').on('click', function(){ 
+		// 	$('.menu').removeClass('small').addClass('full'); 
+		// 	$('.full-category').css({'width': '75%'}); 
+		// 	$('.player__item').css({'width': '75%'}); 
+		// }); 
+		$('.footer__icon').toggle( 
+			function(e){ 
+				$('.menu').removeClass('full').addClass('small'); 
+				$('.full-category').css({'width': '95%'});
+				$('.player__item').css({'width': '95%'});
+			},
+			function(e){
+				$('.menu').removeClass('small').addClass('full'); 
+				$('.full-category').css({'width': '75%'}); 
+				$('.player__item').css({'width': '75%'}); 
+			});
 	}; 
 
 	// ========Menu view change when window resizing occurs========= 

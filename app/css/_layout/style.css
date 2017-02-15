@@ -84,6 +84,7 @@ body {
 }
 
 .footer {
+  position: relative;
   height: 72px;
   margin-top: -72px;
 }
@@ -525,10 +526,9 @@ body {
 }
 
 .footer__button-wrap {
-  float: left;
-  margin-top: 17px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  position: absolute;
+  top: 30%;
+  left: 6%;
 }
 
 .footer__button {
@@ -583,7 +583,6 @@ body {
   width: 100%;
   text-align: center;
   padding: 0;
-  padding-top: 10px;
 }
 .small .acco__icon {
   padding: 0;
@@ -659,13 +658,13 @@ body {
 }
 .small .footer__button_small {
   width: 100%;
-  font-size: 18px;
-  padding-top: 10px;
-  padding-bottom: 7px;
+  font-size: 21px;
+  padding-top: 16px;
+  padding-bottom: 10px;
 }
 .small .footer {
-  height: 95px;
-  margin-top: -95px;
+  height: 55px;
+  margin-top: -55px;
 }
 
 .player__item {
