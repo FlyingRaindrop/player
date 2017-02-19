@@ -10,12 +10,17 @@
 .full-category{
 	float: left;
 	z-index: 2;
-	background-color: $column;
+	// background-color: $column;
 	width: 75%;
 }
 .full-category{
+	overflow: scroll;
 	box-sizing: border-box;
 	padding: 20px;
+}
+.full-category::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 .full-category__list{
 	margin: 0;
@@ -28,7 +33,7 @@
 	margin-left: 6px;
 	margin-bottom: 6px;
 	padding: 15px;
-	width: 19%;
+	width: 170px;
 	background-color: #fff;
 	box-shadow: 0 0 15px rgba(0,0,0,0.7);
 	&:hover{
@@ -43,8 +48,9 @@
 	font-family: 'robotomedium';
 	font-weight: normal;
 	font-style: normal;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 1;
+	width: 85%;
 }
 .full-category__time{
 	margin-bottom: 10px;

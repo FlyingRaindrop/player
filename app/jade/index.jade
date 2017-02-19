@@ -5,16 +5,16 @@ html(lang="ru-RU")
 
 		link(rel="stylesheet", href="bower/video.js/dist/video-js.min.css")
 		link(rel="stylesheet", href="css/_layout/videojs.css") 
-		link(rel="stylesheet", href="css/_layout/style.css") 
-		//- link(rel="stylesheet", href="bower/video.js/dist/video-js.min.css") 
+		link(rel="stylesheet", href="css/_layout/style.css")
 
 	body
 		.container
 			.player
 				.wrapper.clearfix
 					include _common/playerItem.jade
-					include _common/menu.jade
-					include _common/fullCategory.jade
+					.menu-wrap.clearfix
+						include _common/menu.jade
+						include _common/fullCategory.jade
 			//- include _common/firstPage.jade
 		script(src="bower/jquery/jquery.js")
 		script(src="bower/video.js/dist/video.min.js")

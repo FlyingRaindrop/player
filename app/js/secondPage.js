@@ -84,7 +84,6 @@ var SecondPage = (function(){
 	// ========Menu view change when window resizing occurs========= 
 	var _windowSize = function(){ 
 		if ($(window).width() < '1200'){ 
-			$('.full-category').removeAttr('style');
 			$('.player__item').removeAttr('style');
 			$('.menu').removeClass('full').addClass('small'); 
 		}else{
@@ -96,10 +95,48 @@ var SecondPage = (function(){
 	var _categories = function(){ 
 		$('.inserted__icon').toggle( 
 			function(e){ 
-				$('.full-category').fadeIn(300) 
+				var insertedIcon = $('.inserted__icon'),
+					insertedList = $('.inserted__list'),
+					insertedCount,
+					inserdetText,
+					full,
+					categoryTitle,
+					insertedId;
+
+				for(i=0; i<insertedIcon.length; i++){
+					if(insertedIcon[i] == this){
+						insertedCount = i;
+					}
+				}
+
+				inserdetText = $(insertedList[insertedCount]).find('.inserted__text');
+				full = $('.full-category__item');
+
+				for(i=0; i<inserdetText.length-1; i++){
+					$(full[0]).clone().appendTo('.full-category__list');
+				}
+
+				categoryTitle = $('.full-category__title');
+				insertedId = $('.full-category__list').find('.inserte__id');
+
+				for(i=0; i<inserdetText.length; i++){
+					$(categoryTitle[i]).html($(inserdetText[i]).text());
+					$(insertedId[i]).text(i+1);
+				}
+
+				$('.full-category').fadeIn(300);
 			}, 
 			function(e){ 
 				$('.full-category').fadeOut(300); 
+
+				var _remove = function(){
+					var full = $('.full-category__item');
+					for(i=1; i<full.length; i++){
+						$(full[i]).remove();
+					}
+				}
+
+				setTimeout(_remove, 300);
 			} 
 		); 
 	}; 

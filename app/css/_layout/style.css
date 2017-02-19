@@ -80,13 +80,18 @@ body {
 .menu__page {
   box-sizing: border-box;
   min-height: 100%;
-  padding-bottom: 70px;
+  padding-bottom: 55px;
 }
 
 .footer {
   position: relative;
   height: 72px;
   margin-top: -72px;
+}
+
+.menu-wrap {
+  height: 100%;
+  background-color: rgba(61, 79, 173, 0.9);
 }
 
 .all-data {
@@ -594,6 +599,7 @@ body {
 }
 .small .inserted_time {
   display: none;
+  padding: 0;
 }
 .small .inserted__text-wrap {
   display: none;
@@ -601,27 +607,28 @@ body {
 .small .inserte__id-wrap-small {
   float: none;
   display: block;
+  margin: auto;
   margin-bottom: 11px;
+  margin-top: 11px;
   background-color: #6a78c6;
   border-radius: 50%;
-  margin-top: 11px;
   width: 20px;
   height: 20px;
 }
 .small .inserted__item {
   cursor: pointer;
-  padding-left: 33%;
-  padding-right: 33%;
+  padding: 0;
 }
 .small .inserted__item:hover {
   background-color: #32419b;
 }
 .small .inserted__icon {
   float: none;
+  display: block;
+  width: 21px;
+  margin: auto;
   font-size: 20px;
   padding: 0;
-  padding-left: 33%;
-  padding-right: 33%;
 }
 .small .acco__text {
   display: none;
@@ -681,13 +688,18 @@ body {
 .full-category {
   float: left;
   z-index: 2;
-  background-color: #4254b1;
   width: 75%;
 }
 
 .full-category {
+  overflow: scroll;
   box-sizing: border-box;
   padding: 20px;
+}
+
+.full-category::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 .full-category__list {
@@ -702,7 +714,7 @@ body {
   margin-left: 6px;
   margin-bottom: 6px;
   padding: 15px;
-  width: 19%;
+  width: 170px;
   background-color: #fff;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
@@ -718,8 +730,9 @@ body {
   font-family: 'robotomedium';
   font-weight: normal;
   font-style: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1;
+  width: 85%;
 }
 
 .full-category__time {
@@ -987,6 +1000,19 @@ video {
 
   .small {
     width: 10%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .inserte__id {
+    font-size: 11px;
+  }
+
+  .small .acco__text-small {
+    font-size: 12px;
+  }
+  .small .inserted__icon {
+    width: 20px;
+    font-size: 18px;
   }
 }
 

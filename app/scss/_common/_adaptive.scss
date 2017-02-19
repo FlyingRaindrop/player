@@ -136,3 +136,18 @@
 		width: 10%;
 	}
 }
+
+@media screen and (max-width: 400px){
+	.inserte__id{
+		font-size: 11px;
+	}
+	.small{
+		.acco__text-small{
+			font-size: 12px;
+		}
+		.inserted__icon{
+			width: 20px;
+			font-size: 18px;
+		}
+	}
+}

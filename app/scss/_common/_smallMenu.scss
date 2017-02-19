@@ -24,6 +24,7 @@
 	}
 	.inserted_time{
 		display: none;
+		padding: 0;
 	}
 	.inserted__text-wrap{
 		display: none;
@@ -31,28 +32,28 @@
 	.inserte__id-wrap-small{
 		float: none;
 		display: block;
+		margin: auto;
 		margin-bottom: 11px;
+		margin-top: 11px;
 		background-color: #6a78c6;
 		border-radius: 50%;
-		margin-top: 11px;
 		width: 20px;
 		height: 20px;
 	}
 	.inserted__item{
 		cursor: pointer;
-		padding-left: 33%;
-    padding-right: 33%;
-
+		padding: 0;
 		&:hover{
 			background-color: $bgc;
 		}
 	}
 	.inserted__icon{
 		float: none;
+		display: block;
+		width: 21px;
+		margin: auto;
 		font-size: 20px;
 		padding: 0;
-		padding-left: 33%;
-    	padding-right: 33%;
 	}
 	.acco__text{
 		display: none;
